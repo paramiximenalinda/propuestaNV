@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff6f5" />
+    <meta name="description"
+      content="Una pregunta para alguien que está lejos, pero se siente cerquita del corazón. 💗" />
+    <title>Una pregunta importante 💗</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@1,600;1,700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- EmailJS se usa solo para enviar el aviso tras pulsar "sí, quiero". -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"
+      defer></script>
+    <script src="email-config.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient ambient--top" aria-hidden="true"></div>
+    <div class="ambient ambient--bottom" aria-hidden="true"></div>
+    <div class="tiny-stars"
+      aria-hidden="true"><span>✧</span><span>♡</span><span>✦</span></div>
+
+    <header class="site-header">
+      <div class="project-label"><span class="status-dot"
+          aria-hidden="true"></span> PROYECTO: NOSOTROS</div>
+      <div class="case-label"><span aria-hidden="true">✧</span> A UN MENSAJE DE
+        DISTANCIA <span class="tiny-heart" aria-hidden="true">♡</span></div>
+    </header>
+
+    <main class="hero" id="main-content">
+      <section class="hero-copy" aria-labelledby="hero-title">
+        <p class="eyebrow" id="eyebrow">UN POQUITO LEJOS, MUY CERQUITA DEL
+          CORAZÓN</p>
+        <h1 id="hero-title">¿Quieres<br />ser<br /><span class="script-word">mi
+            novia?</span></h1>
+        <p class="intro" id="intro">Puede que hoy nos separen kilómetros, pero
+          cada día tengo más cerca las ganas de elegirte. Quiero compartir
+          contigo las cosas grandes, las pequeñas y hasta los silencios
+          bonitos.</p>
+
+        <div class="actions" id="actions">
+          <button class="accept-button" id="yes-button" type="button">
+            <svg class="button-heart" viewBox="0 0 24 24"
+              aria-hidden="true"><path
+                d="M20.8 4.7a5.5 5.5 0 0 0-7.8 0L12 5.8l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.4 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z" /></svg>
+            <span id="yes-label">sí, quiero 💗</span>
+            <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path
+                d="M5 12h13M13 6l6 6-6 6" /></svg>
+          </button>
+          <button class="letter-button" id="letter-button" type="button"
+            aria-expanded="false" aria-controls="letter-panel">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path
+                d="M4 6.5h16v12H4zM4.5 7l7.5 6 7.5-6" /></svg>
+            leer mi cartita
+          </button>
+          <button class="no-button" id="no-button" type="button">no (es
+            broma)</button>
+        </div>
+        <p class="response-note" id="response-note" aria-live="polite">No hay
+          kilómetros que le ganen a las ganas de verte. ✨</p>
+
+        <div class="music-card" id="music-card">
+          <button class="music-button" id="music-button" type="button"
+            aria-pressed="false">
+            <span class="music-icon" aria-hidden="true"><svg
+                viewBox="0 0 24 24"><path
+                  d="M9 18V5l12-2v13M9 8l12-2M5.5 21a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7ZM17.5 19a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z" /></svg></span>
+            <span class="music-copy"><strong id="music-title">Nuestra
+                canción</strong><span id="music-subtitle">para sentirte un
+                poquito más cerca</span></span>
+            <span class="music-play" id="music-play-icon"
+              aria-hidden="true">▶</span>
+          </button>
+          <p class="music-status" id="music-status" aria-live="polite">Dale play
+            cuando quieras compartir este momentito conmigo. ♫</p>
+          <audio id="love-audio" preload="none"></audio>
+        </div>
+      </section>
+
+      <section class="hero-art"
+        aria-label="Ilustración de un corazón rodeado de órbitas"
+        aria-hidden="true">
+        <span class="sparkle sparkle--one">✧</span>
+        <span class="floating-heart floating-heart--one">♥</span>
+        <span class="floating-heart floating-heart--two">♥</span>
+        <svg class="orbit-art" viewBox="0 0 470 390" role="img">
+          <defs>
+            <filter id="heart-shadow" x="-40%" y="-40%" width="180%"
+              height="190%">
+              <fedropshadow dx="0" dy="14" stdDeviation="11"
+                flood-color="#a63d6a" flood-opacity=".16" />
+            </filter>
+            <lineargradient id="heart-fill" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ed4b85" />
+              <stop offset="1" stop-color="#df3d78" />
+            </lineargradient>
+          </defs>
+          <ellipse class="orbit orbit--pink" cx="234" cy="198" rx="171" ry="78"
+            transform="rotate(-25 234 198)" />
+          <ellipse class="orbit orbit--lilac" cx="232" cy="198" rx="152" ry="72"
+            transform="rotate(48 232 198)" />
+          <ellipse class="orbit orbit--fine" cx="234" cy="198" rx="180" ry="91"
+            transform="rotate(-25 234 198)" />
+          <path class="heart-shape" filter="url(#heart-shadow)"
+            d="M235 249 166 183c-31-31-22-75 10-88 23-9 44 0 59 19 15-19 36-28 59-19 32 13 41 57 10 88Z" />
+          <path class="heart-glint" d="M174 111c10-7 23-7 34 1" />
+          <circle class="orbit-dot" cx="85" cy="144" r="4" />
+          <circle class="orbit-dot orbit-dot--second" cx="374" cy="238" r="4" />
+        </svg>
+        <div class="floating-tag tag--top">kilómetros, no barreras
+          <span>♡</span></div>
+        <div class="floating-tag tag--bottom">mi lugar favorito: contigo</div>
+        <span class="sparkle sparkle--two">✧</span>
+        <p class="art-caption">dos lugares distintos,<br /><em>un mismo
+            cariño</em></p>
+      </section>
+    </main>
+
+    <section class="letter-panel" id="letter-panel" hidden role="dialog"
+      aria-modal="true" aria-labelledby="letter-title"
+      aria-describedby="letter-body">
+      <div class="letter-paper">
+        <button class="close-letter" id="close-letter" type="button"
+          aria-label="Cerrar carta">×</button>
+        <div class="letter-topline"><span>UNA CARTA PARA TI</span><span
+            aria-hidden="true">♡</span></div>
+        <h2 id="letter-title">Para <span data-nickname>mi Ximena
+            Hermosa</span>,</h2>
+        <div class="letter-body" id="letter-body">
+          <p>No quiero prometerte que la distancia siempre será fácil.
+            Quiero prometerte algo más real: que, si tú también quieres, voy
+            a poner de mi parte para que te sientas querida incluso en los
+            días en que no pueda abrazarte.</p>
+          <p>Quiero escucharte cuando tengas mil cosas que contar y
+            acompañarte cuando no sepas ni por dónde empezar. Quiero reírme
+            contigo por tonterías, conocer tus pequeños mundos y convertir
+            los “ojalá estuvieras aquí” en planes que algún día podamos
+            vivir de la mano.</p>
+          <p>No tengo que tener todo resuelto para saber que quiero
+            intentarlo contigo. Porque incluso a través de una pantalla
+            consigues sacarme sonrisas que se quedan conmigo mucho después
+            de despedirnos.</p>
+          <p>No creo que lo nuestro haya sido una simple casualidad. Haber
+            congeniado tan bien y tan rápido me parece algo poco común, de
+            esos regalos que la vida no nos da todos los días. Me siento
+            afortunado de haberte encontrado y de que, entre tantas
+            personas, hayamos conectado de esta manera. Y no quiero pensar
+            que nuestra historia tenga que ser un «lo que rápido llega,
+            rápido se va». Prefiero creer que, si los dos queremos y
+            cuidamos lo que estamos construyendo, podemos hacer que esto sea
+            algo bonito y duradero.
+          </p>
+          <p class="letter-signoff">Así que te lo pregunto con todos mis
+            nervios y todo mi cariño:<br /><strong>¿quieres ser mi novia?
+              💗</strong></p>
+        </div>
+        <div class="letter-signature">con cariño, <span>Felipe ++
+            ❤️</span></div>
+        <div class="letter-modal-actions">
+          <button class="letter-close-link" id="letter-close-link"
+            type="button">guardar este cariño ♡</button>
+        </div>
+      </div>
+    </section>
+
+    <aside class="distance-note" aria-label="Un mensaje para la distancia">
+      <span class="distance-icon" aria-hidden="true">♡</span>
+      <p>Hasta que pueda abrazarte, te mando uno de esos abrazos que duran más
+        de lo normal.</p>
+      <span class="distance-end" aria-hidden="true">♡</span>
+    </aside>
+
+    <span class="corner-sparkle" aria-hidden="true">✧</span>
+    <footer class="site-footer">
+      <span>HECHO CON NERVIOS</span>
+      <span>DESDE MI CORAZÓN HASTA EL TUYO <b aria-hidden="true">♥</b></span>
+    </footer>
+
+    <div class="success-overlay" id="success-overlay" hidden>
+      <div class="success-card" role="dialog" aria-modal="true"
+        aria-labelledby="success-title" aria-describedby="success-message">
+        <button class="close-success" id="close-success"
+          aria-label="Cerrar mensaje" type="button">×</button>
+        <div class="success-heart" aria-hidden="true">♥</div>
+        <p class="eyebrow">QUÉ BONITO QUE SEA CONTIGO</p>
+        <h2 id="success-title">Entonces, que empiece nuestra historia.</h2>
+        <p id="success-message">Aunque no pueda abrazarte justo ahora, quiero
+          que sepas que detrás de esta pantalla hay alguien sonriendo muchísimo.
+          Gracias por elegirme también. Vamos a hacer que la distancia sea solo
+          una parte de nuestra historia, no lo que la define. 💗</p>
+        <p class="email-notification-status" id="email-notification-status"
+          role="status" aria-live="polite">♡</p>
+        <div class="success-actions">
+          <button class="accept-button celebrate-again" id="celebrate-again"
+            type="button">¡un poquito de confeti! <span
+              aria-hidden="true">✦</span></button>
+          <button class="text-link" id="read-letter-after-yes"
+            type="button">leer la cartita otra vez</button>
+        </div>
+        <p class="success-signoff">un abrazo enorme, guardado para cuando nos
+          veamos ♡</p>
+      </div>
+    </div>
+
+    <div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
+  </body>
+</html>
