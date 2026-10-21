@@ -449,3 +449,53 @@ body.modal-open { overflow: hidden; }
   color: #8b6682;
   background: rgba(249, 238, 249, .86);
 }
+
+/* Corrección de overflow horizontal del modal en móviles. */
+.letter-panel {
+  box-sizing: border-box;
+  left: 0;
+  right: 0;
+  width: auto;
+  max-width: 100%;
+  min-width: 0;
+  grid-template-columns: minmax(0, 1fr);
+}
+.letter-paper {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 820px;
+  min-width: 0;
+  overflow-x: hidden;
+}
+.letter-paper > *,
+.letter-topline,
+.letter-paper h2,
+.letter-body,
+.letter-body p,
+.letter-signature {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.letter-topline {
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+
+@media (max-width: 460px) {
+  .letter-panel {
+    padding-top: max(8px, env(safe-area-inset-top));
+    padding-right: max(8px, env(safe-area-inset-right));
+    padding-bottom: max(8px, env(safe-area-inset-bottom));
+    padding-left: max(8px, env(safe-area-inset-left));
+  }
+  .letter-paper {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 21px 16px 22px 23px;
+  }
+  .letter-paper::before { left: 11px; }
+  .letter-topline { padding-right: 0; }
+  .close-letter { margin: -5px -5px 0 8px; }
+}
